@@ -596,7 +596,7 @@ fn test_csharp_query_builder_view_query() {
 
     test.assert_sql(
         "SELECT * FROM all",
-        r#" Value
+        r#" value
 -------
  0
  1
@@ -605,7 +605,7 @@ fn test_csharp_query_builder_view_query() {
 
     test.assert_sql(
         "SELECT * FROM some",
-        r#" Value
+        r#" value
 -------
  1"#,
     );
