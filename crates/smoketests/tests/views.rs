@@ -590,9 +590,9 @@ fn test_csharp_query_builder_view_query() {
     test.publish_csharp_module_source("views-csharp", "views-csharp", CS_VIEWS_QUERY_BUILDER_MODULE)
         .unwrap();
 
-    test.call("InsertValue", &["0"]).unwrap();
-    test.call("InsertValue", &["1"]).unwrap();
-    test.call("InsertValue", &["2"]).unwrap();
+    test.call("insert_value", &["0"]).unwrap();
+    test.call("insert_value", &["1"]).unwrap();
+    test.call("insert_value", &["2"]).unwrap();
 
     test.assert_sql(
         "SELECT * FROM all",
